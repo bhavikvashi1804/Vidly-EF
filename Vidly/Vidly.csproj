@@ -212,9 +212,26 @@
     <Compile Include="Migrations\202011070806223_AddDOBData.Designer.cs">
       <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070822075_AddMovieTable.cs" />
+    <Compile Include="Migrations\202011070822075_AddMovieTable.Designer.cs">
+      <DependentUpon>202011070822075_AddMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070827304_UpdateMovieTable.cs" />
+    <Compile Include="Migrations\202011070827304_UpdateMovieTable.Designer.cs">
+      <DependentUpon>202011070827304_UpdateMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070828380_AddDataIntoGenre.cs" />
+    <Compile Include="Migrations\202011070828380_AddDataIntoGenre.Designer.cs">
+      <DependentUpon>202011070828380_AddDataIntoGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070842404_AddDataIntoMovie.cs" />
+    <Compile Include="Migrations\202011070842404_AddDataIntoMovie.Designer.cs">
+      <DependentUpon>202011070842404_AddDataIntoMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -329,6 +346,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011070806223_AddDOBData.resx">
       <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070822075_AddMovieTable.resx">
+      <DependentUpon>202011070822075_AddMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070827304_UpdateMovieTable.resx">
+      <DependentUpon>202011070827304_UpdateMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070828380_AddDataIntoGenre.resx">
+      <DependentUpon>202011070828380_AddDataIntoGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070842404_AddDataIntoMovie.resx">
+      <DependentUpon>202011070842404_AddDataIntoMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
