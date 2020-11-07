@@ -172,6 +172,10 @@
     <Compile Include="Migrations\202011070446267_InitialModel.Designer.cs">
       <DependentUpon>202011070446267_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.cs" />
+    <Compile Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.Designer.cs">
+      <DependentUpon>202011070559079_AddColumnIsMemeberToCustomerTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -258,6 +262,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011070446267_InitialModel.resx">
       <DependentUpon>202011070446267_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.resx">
+      <DependentUpon>202011070559079_AddColumnIsMemeberToCustomerTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
