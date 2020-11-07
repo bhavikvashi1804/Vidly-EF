@@ -180,6 +180,18 @@
     <Compile Include="Migrations\202011070607224_AddMembershipType.Designer.cs">
       <DependentUpon>202011070607224_AddMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070612408_AddData.cs" />
+    <Compile Include="Migrations\202011070612408_AddData.Designer.cs">
+      <DependentUpon>202011070612408_AddData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.cs" />
+    <Compile Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.Designer.cs">
+      <DependentUpon>202011070619133_RenameTheColumnNameMembershipTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070619519_AddTheData.cs" />
+    <Compile Include="Migrations\202011070619519_AddTheData.Designer.cs">
+      <DependentUpon>202011070619519_AddTheData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -273,6 +285,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011070607224_AddMembershipType.resx">
       <DependentUpon>202011070607224_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070612408_AddData.resx">
+      <DependentUpon>202011070612408_AddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.resx">
+      <DependentUpon>202011070619133_RenameTheColumnNameMembershipTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070619519_AddTheData.resx">
+      <DependentUpon>202011070619519_AddTheData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
