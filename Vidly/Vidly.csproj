@@ -196,6 +196,10 @@
     <Compile Include="Migrations\202011070625212_applyAnnotationToCustomerName.Designer.cs">
       <DependentUpon>202011070625212_applyAnnotationToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.cs" />
+    <Compile Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.Designer.cs">
+      <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -301,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011070625212_applyAnnotationToCustomerName.resx">
       <DependentUpon>202011070625212_applyAnnotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.resx">
+      <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
