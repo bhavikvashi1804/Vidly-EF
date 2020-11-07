@@ -200,6 +200,10 @@
     <Compile Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.Designer.cs">
       <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070745527_AddTheDataIntoMembershipName.cs" />
+    <Compile Include="Migrations\202011070745527_AddTheDataIntoMembershipName.Designer.cs">
+      <DependentUpon>202011070745527_AddTheDataIntoMembershipName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -308,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.resx">
       <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070745527_AddTheDataIntoMembershipName.resx">
+      <DependentUpon>202011070745527_AddTheDataIntoMembershipName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
