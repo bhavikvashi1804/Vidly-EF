@@ -208,6 +208,10 @@
     <Compile Include="Migrations\202011070758391_AddDOB.Designer.cs">
       <DependentUpon>202011070758391_AddDOB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011070806223_AddDOBData.cs" />
+    <Compile Include="Migrations\202011070806223_AddDOBData.Designer.cs">
+      <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -322,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011070758391_AddDOB.resx">
       <DependentUpon>202011070758391_AddDOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070806223_AddDOBData.resx">
+      <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
