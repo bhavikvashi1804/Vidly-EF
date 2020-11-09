@@ -17,6 +17,7 @@ namespace Vidly.Models
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
 
+        [Display(Name="Date Of Birth")]
         public DateTime? DOB { get; set; }
     }
 
