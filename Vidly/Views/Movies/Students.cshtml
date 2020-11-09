@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Vidly.Models.Student>
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+@if (!Model.Any())
+{
+    <p>We don't have any customers yet.</p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>Placement Id</th>
+            <th>Student Id </th>
+            <th>Student Name</th>
+            <th>Company</th>
+            <th>Placement Year</th>
+        </tr>
+        @foreach (var placement in Model)
+        {
+            <tr>
+                <td>@placement.StudentId</td>
+                <td>@placement.PlacementId</td>
+                <td>@placement.StudentName</td>
+                <td>@placement.Company</td>
+                <td>@placement.PlacementYear</td>
+            </tr>
+        }
+    </table>
+}
