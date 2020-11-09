@@ -58,6 +58,17 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
+
+        [HttpPost]
+        //if you accept ViewModel then also works
+        public ActionResult Create(Customer customer)
+        {
+
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index","Customers");
+        }
+
         private IEnumerable<Customer> GetCustomers()
         {
             return new List<Customer>
