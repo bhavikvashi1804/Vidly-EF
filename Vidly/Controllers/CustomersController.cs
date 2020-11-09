@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure.MappingViews;
 
 namespace Vidly.Controllers
 {
@@ -46,6 +47,12 @@ namespace Vidly.Controllers
             return View(customer);
         }
 
+        public ActionResult NewRecord()
+        {
+            
+            return View();
+        }
+
         private IEnumerable<Customer> GetCustomers()
         {
             return new List<Customer>
@@ -54,5 +61,8 @@ namespace Vidly.Controllers
                 new Customer { Id = 2, Name = "Mary Williams" }
             };
         }
+
+
+        
     }
 }
