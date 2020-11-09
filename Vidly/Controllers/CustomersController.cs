@@ -5,6 +5,7 @@ using Vidly.Models;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.MappingViews;
 using Vidly.ViewModels;
+using System.Runtime.InteropServices;
 
 namespace Vidly.Controllers
 {
@@ -51,13 +52,26 @@ namespace Vidly.Controllers
         public ActionResult NewRecord()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
-            var viewModel = new NewCustomerViewModel
+            var viewModel = new CustomerFormViewModel
             {
                 MembershipTypes = membershipTypes
             };
             return View(viewModel);
         }
 
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id==id);
+            if (customer == null)
+                return HttpNotFound();
+
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+            return View("NewRecord",viewModel);
+        }
 
         [HttpPost]
         //if you accept ViewModel then also works
