@@ -75,10 +75,24 @@ namespace Vidly.Controllers
 
         [HttpPost]
         //if you accept ViewModel then also works
-        public ActionResult Create(Customer customer)
+        public ActionResult SaveCustomer(Customer customer)
         {
 
-            _context.Customers.Add(customer);
+            if(customer.Id==0)
+                _context.Customers.Add(customer);
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+                //TryUpdateModel(customerInDb,"",new string[] { "Name"});
+                customerInDb.Name = customer.Name;
+                customerInDb.DOB = customer.DOB;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsMember = customer.IsMember;
+                //or
+                // Mapper.Map(customer,customerInDb )
+            }
+
+
             _context.SaveChanges();
             return RedirectToAction("Index","Customers");
         }
