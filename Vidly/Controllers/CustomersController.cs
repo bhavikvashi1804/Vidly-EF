@@ -54,6 +54,8 @@ namespace Vidly.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
+                //so customer id will be by default 0
                 MembershipTypes = membershipTypes
             };
             return View(viewModel);

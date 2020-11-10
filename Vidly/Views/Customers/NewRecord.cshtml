@@ -8,16 +8,15 @@
 
 @using (Html.BeginForm("SaveCustomer", "Customers"))
 {
+
+    @Html.ValidationSummary()
+
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.Name)
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Customer.Name)
+        @Html.ValidationMessageFor(m => m.Customer.Name)
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Customer.DOB)
-        @Html.TextBoxFor(m => m.Customer.DOB, "{0:d MMM yyyy}", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Customer.DOB)
-    </div>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.MembershipTypeId)
@@ -25,13 +24,21 @@
         @Html.ValidationMessageFor(m => m.Customer.MembershipTypeId)
     </div>
 
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.DOB)
+        @Html.TextBoxFor(m => m.Customer.DOB, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.DOB)
+    </div>
+
+
+
     <div class="checkbox">
         <label>
             @Html.CheckBoxFor(m => m.Customer.IsMember) Subscribed?
         </label>
     </div>
 
-    @Html.HiddenFor(m=>m.Customer.Id)
+    @Html.HiddenFor(m => m.Customer.Id)
     <button type="submit" class="btn btn-primary">
         SAVE
     </button>
