@@ -77,6 +77,7 @@ namespace Vidly.Controllers
 
         [HttpPost]
         //if you accept ViewModel then also works
+        [ValidateAntiForgeryToken]
         public ActionResult SaveCustomer(Customer customer)
         {
 
