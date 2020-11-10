@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "NewRecord";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Html.EnableClientValidation(true);
 }
 
 <h2>Add a new Customer</h2>
@@ -44,3 +45,7 @@
     </button>
 }
 
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
