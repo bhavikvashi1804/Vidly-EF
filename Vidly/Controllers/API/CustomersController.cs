@@ -48,11 +48,11 @@ namespace Vidly.Controllers.API
 
         //POST /api/customers
         [HttpPost]
-        public CustomerDto CreateCustomer(CustomerDto c1)
+        public IHttpActionResult CreateCustomer(CustomerDto c1)
         {
             if (!ModelState.IsValid)
             {
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
             }
 
             var customer = Mapper.Map<CustomerDto, Customer>(c1);
@@ -61,7 +61,7 @@ namespace Vidly.Controllers.API
 
             c1.Id = customer.Id;
 
-            return c1;
+            return Created(new Uri(Request.RequestUri+"/"+ customer.Id),c1);
         }
 
 
