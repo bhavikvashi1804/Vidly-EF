@@ -31,11 +31,12 @@ namespace Vidly.Controllers
             //var customers = GetCustomers();
             //execute the query at each iteration
             //var customers = _context.Customers;
-           
-            //execute the query at the current time
-            var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
 
-            return View(customers);
+            //execute the query at the current time
+            // var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
+
+            //return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id)
