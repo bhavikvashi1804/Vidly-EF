@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 
 namespace Vidly.Controllers
 {
+   
     public class CustomersController : Controller
     {
 
@@ -25,7 +26,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-
+      
         public ViewResult Index()
         {
             //var customers = GetCustomers();
