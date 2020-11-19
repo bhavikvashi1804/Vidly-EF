@@ -185,65 +185,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011070446267_InitialModel.cs" />
-    <Compile Include="Migrations\202011070446267_InitialModel.Designer.cs">
-      <DependentUpon>202011070446267_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.cs" />
-    <Compile Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.Designer.cs">
-      <DependentUpon>202011070559079_AddColumnIsMemeberToCustomerTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070607224_AddMembershipType.cs" />
-    <Compile Include="Migrations\202011070607224_AddMembershipType.Designer.cs">
-      <DependentUpon>202011070607224_AddMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070612408_AddData.cs" />
-    <Compile Include="Migrations\202011070612408_AddData.Designer.cs">
-      <DependentUpon>202011070612408_AddData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.cs" />
-    <Compile Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.Designer.cs">
-      <DependentUpon>202011070619133_RenameTheColumnNameMembershipTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070619519_AddTheData.cs" />
-    <Compile Include="Migrations\202011070619519_AddTheData.Designer.cs">
-      <DependentUpon>202011070619519_AddTheData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070625212_applyAnnotationToCustomerName.cs" />
-    <Compile Include="Migrations\202011070625212_applyAnnotationToCustomerName.Designer.cs">
-      <DependentUpon>202011070625212_applyAnnotationToCustomerName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.cs" />
-    <Compile Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.Designer.cs">
-      <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070745527_AddTheDataIntoMembershipName.cs" />
-    <Compile Include="Migrations\202011070745527_AddTheDataIntoMembershipName.Designer.cs">
-      <DependentUpon>202011070745527_AddTheDataIntoMembershipName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070758391_AddDOB.cs" />
-    <Compile Include="Migrations\202011070758391_AddDOB.Designer.cs">
-      <DependentUpon>202011070758391_AddDOB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070806223_AddDOBData.cs" />
-    <Compile Include="Migrations\202011070806223_AddDOBData.Designer.cs">
-      <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070822075_AddMovieTable.cs" />
-    <Compile Include="Migrations\202011070822075_AddMovieTable.Designer.cs">
-      <DependentUpon>202011070822075_AddMovieTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070827304_UpdateMovieTable.cs" />
-    <Compile Include="Migrations\202011070827304_UpdateMovieTable.Designer.cs">
-      <DependentUpon>202011070827304_UpdateMovieTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070828380_AddDataIntoGenre.cs" />
-    <Compile Include="Migrations\202011070828380_AddDataIntoGenre.Designer.cs">
-      <DependentUpon>202011070828380_AddDataIntoGenre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011070842404_AddDataIntoMovie.cs" />
-    <Compile Include="Migrations\202011070842404_AddDataIntoMovie.Designer.cs">
-      <DependentUpon>202011070842404_AddDataIntoMovie.cs</DependentUpon>
+    <Compile Include="Migrations\202011190528099_AddPhoneNoToAppusers.cs" />
+    <Compile Include="Migrations\202011190528099_AddPhoneNoToAppusers.Designer.cs">
+      <DependentUpon>202011190528099_AddPhoneNoToAppusers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -513,50 +457,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011070446267_InitialModel.resx">
-      <DependentUpon>202011070446267_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070559079_AddColumnIsMemeberToCustomerTable.resx">
-      <DependentUpon>202011070559079_AddColumnIsMemeberToCustomerTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070607224_AddMembershipType.resx">
-      <DependentUpon>202011070607224_AddMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070612408_AddData.resx">
-      <DependentUpon>202011070612408_AddData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070619133_RenameTheColumnNameMembershipTable.resx">
-      <DependentUpon>202011070619133_RenameTheColumnNameMembershipTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070619519_AddTheData.resx">
-      <DependentUpon>202011070619519_AddTheData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070625212_applyAnnotationToCustomerName.resx">
-      <DependentUpon>202011070625212_applyAnnotationToCustomerName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070740512_addColumnMembershipnameToMembershioTypeTable.resx">
-      <DependentUpon>202011070740512_addColumnMembershipnameToMembershioTypeTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070745527_AddTheDataIntoMembershipName.resx">
-      <DependentUpon>202011070745527_AddTheDataIntoMembershipName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070758391_AddDOB.resx">
-      <DependentUpon>202011070758391_AddDOB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070806223_AddDOBData.resx">
-      <DependentUpon>202011070806223_AddDOBData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070822075_AddMovieTable.resx">
-      <DependentUpon>202011070822075_AddMovieTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070827304_UpdateMovieTable.resx">
-      <DependentUpon>202011070827304_UpdateMovieTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070828380_AddDataIntoGenre.resx">
-      <DependentUpon>202011070828380_AddDataIntoGenre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011070842404_AddDataIntoMovie.resx">
-      <DependentUpon>202011070842404_AddDataIntoMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011190528099_AddPhoneNoToAppusers.resx">
+      <DependentUpon>202011190528099_AddPhoneNoToAppusers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
